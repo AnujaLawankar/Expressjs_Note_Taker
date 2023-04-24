@@ -31,7 +31,11 @@ const getNotes = () =>
     headers: {
       'Content-Type': 'application/json',
     },
+
+
   });
+
+
 
 const saveNote = (note) =>
   fetch('/api/notes', {
@@ -40,6 +44,7 @@ const saveNote = (note) =>
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(note),
+
   });
 
 const deleteNote = (id) =>
@@ -50,17 +55,25 @@ const deleteNote = (id) =>
     },
   });
 
+// const editNote = (id) =>
+//   fetch(`/api/notes/${id}`, {
+//     method: "PUT",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//   });
+
 const renderActiveNote = () => {
   hide(saveNoteBtn);
 
   if (activeNote.id) {
-    noteTitle.setAttribute('readonly', true);
-    noteText.setAttribute('readonly', true);
+    //  noteTitle.setAttribute('readonly', true);
+    //  noteText.setAttribute('readonly', true);
     noteTitle.value = activeNote.title;
     noteText.value = activeNote.text;
   } else {
-    noteTitle.removeAttribute('readonly');
-    noteText.removeAttribute('readonly');
+    //   noteTitle.removeAttribute('readonly');
+    //   noteText.removeAttribute('readonly');
     noteTitle.value = '';
     noteText.value = '';
   }
@@ -77,6 +90,28 @@ const handleNoteSave = () => {
   });
 };
 
+
+// const handleNoteEdit = (event) => {
+//   // prevents the click listener for the list from being called when the button inside of it is clicked
+//   event.stopPropagation();
+//   handleNoteView();
+
+//   const note = event.target;
+//   const noteId = JSON.parse(note.parentElement.getAttribute("data-note")).id;
+
+//   if (activeNote.id === noteId) {
+//     activeNote = {
+//       title: noteTitle.value.trim(),
+//       text: noteText.value.trim(),
+//     };
+//   }
+
+//   editNote(noteId).then(() => {
+//     saveNote(activeNote);
+//     getAndRenderNotes();
+//     renderActiveNote();
+//   });
+// };
 // Delete the clicked note
 const handleNoteDelete = (e) => {
   // Prevents the click listener for the list from being called when the button inside of it is clicked
@@ -131,7 +166,7 @@ const renderNoteList = async (notes) => {
     liEl.classList.add('list-group-item');
 
     const spanEl = document.createElement('span');
-    spanEl.classList.add('list-item-title');
+    //spanEl.classList.add('list-item-title');
     spanEl.innerText = text;
     spanEl.addEventListener('click', handleNoteView);
 
