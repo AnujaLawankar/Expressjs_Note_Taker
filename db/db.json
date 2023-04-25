@@ -1,12 +1,22 @@
 [
     {
-        "title": "hello",
-        "text": "you are good",
-        "note_id": "d46d42bf-3791-4a64-97f9-0345fd7fc678"
+        "title": "Schedule Meeting with client",
+        "text": "Setup a meetup on zoom for amazon client",
+        "note_id": "cd6429ce-cc54-4ae8-9e0f-26381edc1208"
     },
     {
-        "title": "hello Good night",
-        "text": "sweet dreams",
-        "note_id": "71132810-1d67-4c41-9bc3-cc4d88a8680f"
+        "title": "Add backup",
+        "text": "Run backup program on every day.",
+        "note_id": "77b51ac4-f6ba-44d7-bd5d-07b0f34a8d5d"
+    },
+    {
+        "title": "Lunch tip",
+        "text": "Add vegies in lunch is compulsory for employees",
+        "note_id": "060dddaa-b617-45f7-882c-3e71f6968904"
+    },
+    {
+        "title": "Birthday Parties",
+        "text": "Every month  common Bday will celebrate at the end of the month ",
+        "note_id": "43036c0e-6e4c-4622-b44f-30d8d8ed83cb"
     }
 ]

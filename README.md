@@ -4,15 +4,17 @@
 
 ## Description
 
-1. Expressjs_Note_Taker is usefull for write and save notes. SO THAT, keep track on tasks.
+1. Expressjs_Note_Taker is useful for write and save notes. SO THAT, keep track on tasks.
 
 2. When the Expressjs_Note_Taker is open then, it will displayed all the notes link in a landing page.
 
-3. When user naviagte to notes pages. Then the list of notes will displayed on right side of the page and if the user want to add new note, then the empty title and empty text fields will displayed on left side of the page.
+3. When user navigate to notes pages. Then the list of notes will displayed on left side of the page and if the user want to add new note, then the empty title and empty text fields will displayed on right side of the page.
 
-4. When the user want enter title and text for adding a new note then, the save icon will appears on the top left coner of the page to save the new note.
+4. When the user want enter title and text for adding a new note then, the save icon will appears on the top right corner of the page to save the new note.
 
-5. When user want to edit the note which is already present then the user need to click on that particular note and then the empty field will dipalyed to enter the new text.
+5. When user want to edit the note which is already present then the user need to click on that particular note and then the empty field will displayed to enter the new text.
+
+6. User can also delete the unwanted note which he don't want to keep in note tracker. By just clicking on delete icon.
 
 
 
@@ -49,12 +51,12 @@
 
 
 ## URLs:-
-Here, you can find the webpage.
+Here, you can find the webpage on Heroku.
 
 
- application's URL:- 
+ Application's Heroku URL:- 
 
-
+ https://express-note-tracker.herokuapp.com/
 
 
 
@@ -67,10 +69,10 @@ https://github.com/AnujaLawankar/Expressjs_Note_Taker
 ## Installation
 
 
-Neede to install npm and nodemon
+Needed to install npm and nodemon
 1. npm install
 2. npm install -g nodemon
-3. npm install generate-unique-id 
+3. npm install uuid
 4. npm start
 
 ## Usage
@@ -84,6 +86,21 @@ Expressjs_Note_Taker useful for a  small business owner. He can able to write an
 
 The following image demonstrates the web application appearance:
 1. Expressjs_Note_Taker web appearance. 
-![Website](./Assets/images/screenshot1.png)
+![Website](./public/assets/images/screenshot1.png)
+
+2. Displayed all notes with text in the left side of the web page. And user can add new note with text in the right side of the web page.
+![Website](./public/assets/images/screenshot2.png)
+
+
+3. If user click on left side of note then that note with text will open in the right side of the web page. 
+![Website](./public/assets/images/screenshot3.png)
+
+
+4. If user want to save the text and title then in the top right corner the save icon will appear to save the note with text.
+![Website](./public/assets/images/screenshot4.png)
+
+
+5. User can delete also the note which he don't want to keep in the note tracker. Here, good morning note is deleted as you checkout in the above screenshots.
+![Website](./public/assets/images/screenshot5.png)
 
 

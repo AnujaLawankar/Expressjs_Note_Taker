@@ -1,16 +1,13 @@
 const notes = require('express').Router();
 
 const { v4: uuidv4 } = require('uuid');
-//const fs =require("fs");
+
 const {
     readFromFile,
     readAndAppend,
     writeToFile,
 } = require('../helpers/fsUtils');
 const { json } = require('express');
-
-
-
 
 
 
@@ -86,67 +83,6 @@ notes.post('/', (req, res) => {
 
     }
 });
-
-// notes.delete("/notes/:id", (req, res) => {
-
-//     const deleteId = req.params.id;
-//     readFromFile("./db/db.json", "utf-8", (err, data) => {
-
-//         if (err) throw err;
-//         let noteArr = JSON.parse(data);
-
-//         for (let i = 0; i < noteArr.length; i++) {
-//             if (noteArr[i].id === deleteId) {
-//                 noteArr.splice(i, 1);
-
-//             }
-//         }
-
-//         editNote(noteArr);
-//         console.log(`Note Deleted...!! NOTE id: ${deleteId}`);
-//         res.send(noteArr);
-
-//     });
-
-// });
-
-// //PUT
-
-// notes.put("/notes/:id", (req, res) => {
-
-//     const editId = req.params.id;
-
-//     readFromFile(".db/db.json", "utf-8", (err, data) => {
-
-//         if (err) throw err;
-
-//         let noteArr = JSON.parse(data);
-
-//         //    let selectNote = noteArr.find(note) => note.id === editId);
-
-//         if (selectNote) {
-//             let updatedNote = {
-//                 title: req.body.title,
-//                 text: req.body.text,
-//                 id: selecteNote.id,
-
-//             };
-
-//             let targrtIndex = noteArr.indexOf(selectNote);
-
-//             noteArr.splice(targrtIndex, 1, updatedNote);
-
-//             res.sendStatus(204);
-//             editNote(noteArr);
-//             res.json(noteArr);
-//         }
-//         else {
-//             res.sendStatus(404);
-
-//         }
-
-//     });
-// });
 
 
 
