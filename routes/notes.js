@@ -87,28 +87,28 @@ notes.post('/', (req, res) => {
     }
 });
 
-notes.delete("/notes/:id", (req, res) => {
+// notes.delete("/notes/:id", (req, res) => {
 
-    const deleteId = req.params.id;
-    readFromFile("./db/db.json", "utf-8", (err, data) => {
+//     const deleteId = req.params.id;
+//     readFromFile("./db/db.json", "utf-8", (err, data) => {
 
-        if (err) throw err;
-        let noteArr = JSON.parse(data);
+//         if (err) throw err;
+//         let noteArr = JSON.parse(data);
 
-        for (let i = 0; i < noteArr.length; i++) {
-            if (noteArr[i].id === deleteId) {
-                noteArr.splice(i, 1);
+//         for (let i = 0; i < noteArr.length; i++) {
+//             if (noteArr[i].id === deleteId) {
+//                 noteArr.splice(i, 1);
 
-            }
-        }
+//             }
+//         }
 
-        editNote(noteArr);
-        console.log(`Note Deleted...!! NOTE id: ${deleteId}`);
-        res.send(noteArr);
+//         editNote(noteArr);
+//         console.log(`Note Deleted...!! NOTE id: ${deleteId}`);
+//         res.send(noteArr);
 
-    });
+//     });
 
-});
+// });
 
 // //PUT
 
